@@ -1,0 +1,105 @@
+<!DOC html/>
+<html>
+<head>
+ <title> college portal</title>
+ <link rel="stylesheet" href="studentportal.css" />
+ 
+ <meta charset="UTF-8"/>
+ 
+</head>
+<body>
+
+
+
+<form action="action_page.php">
+  <div class="container">
+    <h1>course Register</h1>
+    <p class="p2">Please fill in this form to register.</p>
+    <hr>
+	<h2> a. Student Details </h2>
+	<hr>
+
+    <label for="first name"><b>i.First Name</b></label>
+    <input type="text" placeholder="Enter first name" name="First Name" id="First Name" required>
+	
+	<label for="middle name"><b>ii. Middle Name</b></label>
+    <input type="text" placeholder="Enter middle name" name="middle Name" id="middle Name" required>
+	
+	<label for="first name"><b>iii.Surname</b></label>
+    <input type="text" placeholder="Enter Surname" name="SurName" id="SurName" required>
+	
+	<label for="first name"><b>iv.Name Known As</b></label>
+    <input type="text" placeholder="Enter Name Known As" name="Name Known As" id="Name Known As" required>
+	
+	<label for="Age"><b>v.Age</b></label>
+    <input type="Number" placeholder="Enter Age" name="Age" id="Age" required>
+	<hr>
+	
+	<label for="Date of Birth"><b>vi. Date of Birth</b></label>
+    <input type="date" name="Date of Birth" id="Date of Birth" required>
+	<hr>
+	
+	<label for="ID Number"><b>ID Number</b></label>
+    <input type="" placeholder="please enter your ID Number" name="ID Number" id="ID Number" required>
+
+    <hr>
+	<label for="file upload">upload a file:</label>
+  <input type="file" id="File" name="File">
+  <hr>
+  <hr>
+
+    <h2> b. Address </h2>
+	
+	<hr>
+	<hr>
+	
+	<h2> c. Contact Details </h2>
+	<div class = "email">
+	<label for="">i.Email Address </label>
+  <input type="Email" id="Email Address" name="Email address" placeholder= "Enter Email address" required>
+  
+	</div>
+	<hr>
+	<label for="">ii.Home TEL Number </label>
+  <input type="tel" id="Home Number" name="Home Number" placeholder= "Enter Home Tel Number" required>
+  <hr>
+	<label for="">iii.Cel Number </label>
+  <input type="tel" id="Cel Number" name="Cel Number" placeholder= "Enter Cel Number" required>
+  
+  <hr>
+	<label for="">iv.Alt Email </label>
+  <input type="Email" id="Alt. Email" name="Alt. Email" placeholder= "Enter Alt. Email" required>
+  
+  <hr>
+	<label for="">v. Alt. Cel Number </label>
+  <input type="tel" id="Alt Cel Number" name="Al Cel Number" placeholder= "Enter Alt Cel Number" required>
+  
+	<h2> d. Course details </h2>
+	
+	<label for="course">i.Select Course:</label>
+
+<select name="course" id="course">
+  <option value="Accounting">Accounting</option>
+  <option value="Application Development">Application Development</option>
+  <option value="End-User Computing">End-User Computing</option>
+  <option value="Quality Assurance">Quality Assurance</option>
+  <option value="Database Administrator">Database Aministrator</option>
+  
+</select>
+
+<hr>
+   <h2> f.Account details/Statement</h2>
+   
+   
+
+    <p>By registering your course with us you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+</body>
+</html>
