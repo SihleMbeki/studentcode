@@ -2,9 +2,27 @@
 <head>
  <title> college portal</title>
  <link rel="stylesheet" href="2nd.css" />
+<style>
+.hide{
+display:none;
+}
+</style>
  
  <meta charset="UTF-8"/>
- 
+ <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+ <script>
+function selectCity() {
+if(document.getElementById("provinces").selectedIndex==1){
+$("#selectCity").toggleClass("hide");
+}
+
+  //document.getElementById("demo").innerHTML =
+ // document.getElementById("mySelect").selectedIndex;
+}
+</script>
 </head>
 <body>
 
@@ -48,7 +66,17 @@
   <hr>
 
     <h2> b. Address </h2>
-	
+	<label for="ID Number"><b>Select province</b></label>
+  <select name="provinces" id="provinces" onchange="selectCity();">
+  <option value="Accounting">list of courses from DB</option>
+ <option value="Accounting">KZN</option></select><br/><br/>
+
+<div id="selectCity" class="hide">
+<label for="ID Number"><b>select city</b></label>
+  <select name="course" id="city">
+  <option value="Accounting">Durban</option>
+<option value="Accounting">Pinetown</option>
+</select></div>
 	<hr>
 	<hr>
 	
